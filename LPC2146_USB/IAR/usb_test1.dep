@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_ep.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_usb_hw.r79</file>
+      <file>$PROJ_DIR$\lpc2146_flash.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_port.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_usb_ep.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_mutex.r79</file>
+      <file>$PROJ_DIR$\Debug\List\usb_test1.map</file>
+      <file>$PROJ_DIR$\..\tests\utils.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_port.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl4tpannl8n.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_user.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_usb_req.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_event.r79</file>
+      <file>$PROJ_DIR$\Debug\Exe\usb_test1.d79</file>
+      <file>$PROJ_DIR$\..\usb_tests\utils.h</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_tst1.r79</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_utils.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\utils.r79</file>
+      <file>$PROJ_DIR$\..\tests\tn_user.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_sprintf.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_dqueue.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tst1.r79</file>
+      <file>$PROJ_DIR$\..\tests\tst1.c</file>
+      <file>$PROJ_DIR$\..\tests\i2c.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_port_asm.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_sem.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_utils.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\lpc214x.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\usb_test1.hex</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_usb_descr.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_conf.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_hardware_init.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_hw.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\tnkernel_startup_iar.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_mem.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_descr.c</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_ep.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_hw.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tn_tasks.r79</file>
+      <file>$PROJ_DIR$\..\usb_tests\usb_tst1.c</file>
+      <file>$PROJ_DIR$\..\usb_tests\utils.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_dqueue.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_event.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_mem.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_mutex.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_port.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_sem.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_port_asm.s79</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_usb_req.c</file>
+      <file>$PROJ_DIR$\..\usb_tests\tn_user.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_tasks.c</file>
+      <file>$PROJ_DIR$\..\..\TNKernel\tn_utils.c</file>
+      <file>$PROJ_DIR$\..\tests\tn_sprintf.c</file>
+      <file>$PROJ_DIR$\startup_hardware_init.s79</file>
+      <file>$PROJ_DIR$\tnkernel_startup_iar.s79</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\tests\utils.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\usb_test1.d79</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 6 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 2 34 18 23 12 37 5 3 27 28 42 32 4 1 11 10 29 36 16 20 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\tests\tn_user.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 6 13 31</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\tests\tst1.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\tests\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\tn_usb_hw.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 19 33 30 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\tn_usb_descr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 19 33 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\tn_usb_ep.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 15 8 41 19 33 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\usb_tst1.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 15 8 14 41 19 33 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\utils.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 14 41 19 33</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_dqueue.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_event.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_mem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_mutex.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_port.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_sem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_port_asm.s79</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\tn_usb_req.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 19 33 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\usb_tests\tn_user.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 15 14 41 19 33 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_tasks.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\TNKernel\tn_utils.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\tests\tn_sprintf.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_hardware_init.s79</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\tnkernel_startup_iar.s79</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

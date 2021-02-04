@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>usb_test1/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>159</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>615</ColumnWidth1><ColumnWidth2>164</ColumnWidth2><ColumnWidth3>41</ColumnWidth3></Build>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-31101-24342</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>usb_test1</ExpandedNode><ExpandedNode>usb_test1/Test files</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-9082-24345</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\tn_usb.h</Filename><XPos>0</XPos><YPos>126</YPos><SelStart>5214</SelStart><SelEnd>5214</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\tn_usb_ep.c</Filename><XPos>0</XPos><YPos>230</YPos><SelStart>6853</SelStart><SelEnd>6853</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\tn_usb_hw.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>1297</SelStart><SelEnd>1297</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\tn_user.c</Filename><XPos>0</XPos><YPos>16</YPos><SelStart>1200</SelStart><SelEnd>1200</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\usb_tst1.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>2081</SelStart><SelEnd>2081</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\utils.c</Filename><XPos>0</XPos><YPos>89</YPos><SelStart>5033</SelStart><SelEnd>5033</SelEnd></Tab><ActiveTab>5</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>F:\TNKernel_v21\LPC2146\usb_tests\lpc214x.h</Filename><XPos>0</XPos><YPos>189</YPos><SelStart>11595</SelStart><SelEnd>11595</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00a0e528><key>iaridepm1</key></Toolbar-00a0e528></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>374</Bottom><Right>233</Right><x>-2</x><y>-2</y><xscreen>192</xscreen><yscreen>192</yscreen><sizeHorzCX>218678</sizeHorzCX><sizeHorzCY>315789</sizeHorzCY><sizeVertCX>267653</sizeVertCX><sizeVertCY>618421</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>190</Bottom><Right>880</Right><x>-2</x><y>-2</y><xscreen>882</xscreen><yscreen>192</yscreen><sizeHorzCX>1004555</sizeHorzCX><sizeHorzCY>315789</sizeHorzCY><sizeVertCX>218678</sizeVertCX><sizeVertCY>315789</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

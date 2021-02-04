@@ -1,0 +1,660 @@
+<!DOCTYPE Board_Memory_Definition_File>
+<Root name="Philips LPC2146" >
+  <MemorySegment size="0x00040000" access="ReadOnly" name="FLASH" start="0x00000000" />
+  <MemorySegment size="0x00008000" access="Read/Write" name="SRAM" start="0x40000000" />
+  <MemorySegment size="0x20000000" access="Read/Write" name="Peripherals" start="0xE0000000" >
+    <RegisterGroup name="Watchdog Timer Registers" start="0xE0000000" >
+      <Register size="0x4" name="WDMOD" start="0xE0000000" >
+        <BitField size="1" start="0" name="WDEN" />
+        <BitField size="1" start="1" name="WDRESET" />
+        <BitField size="1" start="2" name="WDTOF" />
+        <BitField size="1" start="3" name="WDINT" />
+      </Register>
+      <Register size="0x4" name="WDTC" start="0xE0000004" />
+      <Register size="0x4" name="WDFEED" start="0xE0000008" />
+      <Register size="0x4" name="WDTV" start="0xE000000C" />
+    </RegisterGroup>
+    <RegisterGroup name="Timer0 Registers" start="0xE0004000" >
+      <Register size="0x4" name="T0IR" start="0xE0004000" >
+        <BitField size="1" start="0" name="MR0" />
+        <BitField size="1" start="1" name="MR1" />
+        <BitField size="1" start="2" name="MR2" />
+        <BitField size="1" start="3" name="MR3" />
+        <BitField size="1" start="4" name="CR0" />
+        <BitField size="1" start="5" name="CR1" />
+        <BitField size="1" start="6" name="CR2" />
+        <BitField size="1" start="7" name="CR3" />
+      </Register>
+      <Register size="0x4" name="T0TCR" start="0xE0004004" >
+        <BitField size="1" start="0" name="Counter_Enable" />
+        <BitField size="1" start="1" name="Counter_Reset" />
+      </Register>
+      <Register size="0x4" name="T0TC" start="0xE0004008" />
+      <Register size="0x4" name="T0PR" start="0xE000400C" />
+      <Register size="0x4" name="T0PC" start="0xE0004010" />
+      <Register size="0x4" name="T0MCR" start="0xE0004014" >
+        <BitField size="1" start="0" name="Interrupt_on_MR0" />
+        <BitField size="1" start="1" name="Reset_on_MR0" />
+        <BitField size="1" start="2" name="Stop_on_MR0" />
+        <BitField size="1" start="3" name="Interrupt_on_MR1" />
+        <BitField size="1" start="4" name="Reset_on_MR1" />
+        <BitField size="1" start="5" name="Stop_on_MR1" />
+        <BitField size="1" start="7" name="Interrupt_on_MR2" />
+        <BitField size="1" start="7" name="Reset_on_MR2" />
+        <BitField size="1" start="8" name="Stop_on_MR2" />
+        <BitField size="1" start="9" name="Interrupt_on_MR3" />
+        <BitField size="1" start="10" name="Reset_on_MR3" />
+        <BitField size="1" start="11" name="Stop_on_MR3" />
+      </Register>
+      <Register size="0x4" name="T0MR0" start="0xE0004018" />
+      <Register size="0x4" name="T0MR1" start="0xE000401C" />
+      <Register size="0x4" name="T0MR2" start="0xE0004020" />
+      <Register size="0x4" name="T0MR3" start="0xE0004024" />
+      <Register size="0x4" name="T0CCR" start="0xE0004028" >
+        <BitField size="1" start="0" name="Capture_on_CAPn_0_rising_edge" />
+        <BitField size="1" start="1" name="Capture_on_CAPn_0_falling_edge" />
+        <BitField size="1" start="2" name="Interrupt_on_CAPn_0_event" />
+        <BitField size="1" start="3" name="Capture_on_CAPn_1_rising_edge" />
+        <BitField size="1" start="4" name="Capture_on_CAPn_1_falling_edge" />
+        <BitField size="1" start="5" name="Interrupt_on_CAPn_1_event" />
+        <BitField size="1" start="7" name="Capture_on_CAPn_2_rising_edge" />
+        <BitField size="1" start="7" name="Capture_on_CAPn_2_falling_edge" />
+        <BitField size="1" start="8" name="Interrupt_on_CAPn_2_event" />
+        <BitField size="1" start="9" name="Capture_on_CAPn_3_rising_edge" />
+        <BitField size="1" start="10" name="Capture_on_CAPn_3_falling_edge" />
+        <BitField size="1" start="11" name="Interrupt_on_CAPn_3_event" />
+      </Register>
+      <Register size="0x4" name="T0CR0" start="0xE000402C" />
+      <Register size="0x4" name="T0CR1" start="0xE0004030" />
+      <Register size="0x4" name="T0CR2" start="0xE0004034" />
+      <Register size="0x4" name="T0CR3" start="0xE0004038" />
+      <Register size="0x4" name="T0EMR" start="0xE000403C" >
+        <BitField size="1" start="0" name="External_Match_0" />
+        <BitField size="1" start="1" name="External_Match_1" />
+        <BitField size="1" start="2" name="External_Match_2" />
+        <BitField size="1" start="3" name="External_Match_3" />
+        <BitField size="2" start="4" name="External_Match_Control_0" />
+        <BitField size="2" start="6" name="External_Match_Control_1" />
+        <BitField size="2" start="8" name="External_Match_Control_2" />
+        <BitField size="2" start="10" name="External_Match_Control_3" />
+      </Register>
+      <Register size="0x4" name="T0CTCR" start="0xE0004070" >
+        <BitField size="2" start="0" name="Mode" />
+        <BitField size="2" start="2" name="Input_Select" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="Timer1 Registers" start="0xE0008000" >
+      <Register size="0x4" name="T1IR" start="0xE0008000" >
+        <BitField size="1" start="0" name="MR0" />
+        <BitField size="1" start="1" name="MR1" />
+        <BitField size="1" start="2" name="MR2" />
+        <BitField size="1" start="3" name="MR3" />
+        <BitField size="1" start="4" name="CR0" />
+        <BitField size="1" start="5" name="CR1" />
+        <BitField size="1" start="6" name="CR2" />
+        <BitField size="1" start="7" name="CR3" />
+      </Register>
+      <Register size="0x4" name="T1TCR" start="0xE0008004" >
+        <BitField size="1" start="0" name="Counter_Enable" />
+        <BitField size="1" start="1" name="Counter_Reset" />
+      </Register>
+      <Register size="0x4" name="T1TC" start="0xE0008008" />
+      <Register size="0x4" name="T1PR" start="0xE000800C" />
+      <Register size="0x4" name="T1PC" start="0xE0008010" />
+      <Register size="0x4" name="T1MCR" start="0xE0008014" >
+        <BitField size="1" start="0" name="Interrupt_on_MR0" />
+        <BitField size="1" start="1" name="Reset_on_MR0" />
+        <BitField size="1" start="2" name="Stop_on_MR0" />
+        <BitField size="1" start="3" name="Interrupt_on_MR1" />
+        <BitField size="1" start="4" name="Reset_on_MR1" />
+        <BitField size="1" start="5" name="Stop_on_MR1" />
+        <BitField size="1" start="7" name="Interrupt_on_MR2" />
+        <BitField size="1" start="7" name="Reset_on_MR2" />
+        <BitField size="1" start="8" name="Stop_on_MR2" />
+        <BitField size="1" start="9" name="Interrupt_on_MR3" />
+        <BitField size="1" start="10" name="Reset_on_MR3" />
+        <BitField size="1" start="11" name="Stop_on_MR3" />
+      </Register>
+      <Register size="0x4" name="T1MR0" start="0xE0008018" />
+      <Register size="0x4" name="T1MR1" start="0xE000801C" />
+      <Register size="0x4" name="T1MR2" start="0xE0008020" />
+      <Register size="0x4" name="T1MR3" start="0xE0008024" />
+      <Register size="0x4" name="T1CCR" start="0xE0008028" >
+        <BitField size="1" start="0" name="Capture_on_CAPn_0_rising_edge" />
+        <BitField size="1" start="1" name="Capture_on_CAPn_0_falling_edge" />
+        <BitField size="1" start="2" name="Interrupt_on_CAPn_0_event" />
+        <BitField size="1" start="3" name="Capture_on_CAPn_1_rising_edge" />
+        <BitField size="1" start="4" name="Capture_on_CAPn_1_falling_edge" />
+        <BitField size="1" start="5" name="Interrupt_on_CAPn_1_event" />
+        <BitField size="1" start="7" name="Capture_on_CAPn_2_rising_edge" />
+        <BitField size="1" start="7" name="Capture_on_CAPn_2_falling_edge" />
+        <BitField size="1" start="8" name="Interrupt_on_CAPn_2_event" />
+        <BitField size="1" start="9" name="Capture_on_CAPn_3_rising_edge" />
+        <BitField size="1" start="10" name="Capture_on_CAPn_3_falling_edge" />
+        <BitField size="1" start="11" name="Interrupt_on_CAPn_3_event" />
+      </Register>
+      <Register size="0x4" name="T1CR0" start="0xE000802C" />
+      <Register size="0x4" name="T1CR1" start="0xE0008030" />
+      <Register size="0x4" name="T1CR2" start="0xE0008034" />
+      <Register size="0x4" name="T1CR3" start="0xE0008038" />
+      <Register size="0x4" name="T1EMR" start="0xE000803C" >
+        <BitField size="1" start="0" name="External_Match_0" />
+        <BitField size="1" start="1" name="External_Match_1" />
+        <BitField size="1" start="2" name="External_Match_2" />
+        <BitField size="1" start="3" name="External_Match_3" />
+        <BitField size="2" start="4" name="External_Match_Control_0" />
+        <BitField size="2" start="6" name="External_Match_Control_1" />
+        <BitField size="2" start="8" name="External_Match_Control_2" />
+        <BitField size="2" start="10" name="External_Match_Control_3" />
+      </Register>
+      <Register size="0x4" name="T1CTCR" start="0xE0008070" >
+        <BitField size="2" start="0" name="Mode" />
+        <BitField size="2" start="2" name="Input_Select" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="UART0 Registers" start="0xE000C000" >
+      <Register size="0x1" access="None" name="U0RBR" start="0xE000C000" />
+      <Register size="0x1" access="None" name="U0THR" start="0xE000C000" />
+      <Register size="0x1" access="None" name="U0DLL" start="0xE000C000" />
+      <Register size="0x1" access="None" name="U0DLM" start="0xE000C004" />
+      <Register size="0x1" name="U0IER" start="0xE000C004" >
+        <BitField size="1" start="0" name="RBR_Interrupt_Enable" />
+        <BitField size="1" start="1" name="THRE_Interrupt_Enable" />
+        <BitField size="1" start="2" name="Rx_Line_Status_Interrupt_Enable" />
+      </Register>
+      <Register size="0x1" name="U0IIR" start="0xE000C008" >
+        <BitField size="1" start="0" name="Interrupt_Pending" />
+        <BitField size="3" start="1" name="Interrupt_Identification" />
+        <BitField size="2" start="6" name="FIFO_Enable" />
+      </Register>
+      <Register size="0x1" access="None" name="U0FCR" start="0xE000C008" >
+        <BitField size="1" start="0" name="FIFO_Enable" />
+        <BitField size="1" start="1" name="Rx_FIFO_Reset" />
+        <BitField size="1" start="2" name="Tx_FIFO_Reset" />
+        <BitField size="2" start="6" name="Rx_Trigger_Level_Select" />
+      </Register>
+      <Register size="0x1" name="U0LCR" start="0xE000C00C" >
+        <BitField size="2" start="0" name="Word_Length_Select" />
+        <BitField size="1" start="2" name="Stop_Bit_Select" />
+        <BitField size="1" start="3" name="Parity_Enable" />
+        <BitField size="2" start="4" name="Parity_Select" />
+        <BitField size="1" start="6" name="Break_Control" />
+        <BitField size="1" start="7" name="Divisor_Latch_Access_Bit" />
+      </Register>
+      <Register size="0x1" name="U0LSR" start="0xE000C014" >
+        <BitField size="1" start="0" name="RDR" />
+        <BitField size="1" start="1" name="OE" />
+        <BitField size="1" start="2" name="PE" />
+        <BitField size="1" start="3" name="FE" />
+        <BitField size="1" start="4" name="BI" />
+        <BitField size="1" start="5" name="THRE" />
+        <BitField size="1" start="6" name="TEMT" />
+        <BitField size="1" start="7" name="RXFE" />
+      </Register>
+      <Register size="0x1" name="U0SCR" start="0xE000C01C" />
+    </RegisterGroup>
+    <RegisterGroup name="UART1 Registers" start="0xE0010000" >
+      <Register size="0x1" access="None" name="U1RBR" start="0xE0010000" />
+      <Register size="0x1" access="None" name="U1THR" start="0xE0010000" />
+      <Register size="0x1" access="None" name="U1DLL" start="0xE0010000" />
+      <Register size="0x1" access="None" name="U1DLM" start="0xE0010004" />
+      <Register size="0x1" name="U1IER" start="0xE0010004" >
+        <BitField size="1" start="0" name="RBR_Interrupt_Enable" />
+        <BitField size="1" start="1" name="THRE_Interrupt_Enable" />
+        <BitField size="1" start="2" name="Rx_Line_Status_Interrupt_Enable" />
+        <BitField size="1" start="2" name="Modem_Status_Interrupt_Enable" />
+      </Register>
+      <Register size="0x1" name="U1IIR" start="0xE0010008" >
+        <BitField size="1" start="0" name="Interrupt_Pending" />
+        <BitField size="3" start="1" name="Interrupt_Identification" />
+        <BitField size="2" start="6" name="FIFO_Enable" />
+      </Register>
+      <Register size="0x1" access="None" name="U1FCR" start="0xE0010008" >
+        <BitField size="1" start="0" name="FIFO_Enable" />
+        <BitField size="1" start="1" name="Rx_FIFO_Reset" />
+        <BitField size="1" start="2" name="Tx_FIFO_Reset" />
+        <BitField size="2" start="6" name="Rx_Trigger_Level_Select" />
+      </Register>
+      <Register size="0x1" name="U1LCR" start="0xE001000C" >
+        <BitField size="2" start="0" name="Word_Length_Select" />
+        <BitField size="1" start="2" name="Stop_Bit_Select" />
+        <BitField size="1" start="3" name="Parity_Enable" />
+        <BitField size="2" start="4" name="Parity_Select" />
+        <BitField size="1" start="6" name="Break_Control" />
+        <BitField size="1" start="7" name="Divisor_Latch_Access_Bit" />
+      </Register>
+      <Register size="0x1" name="U1MCR" start="0xE0010010" >
+        <BitField size="1" start="0" name="DTR_Control" />
+        <BitField size="1" start="1" name="RTS_Control" />
+        <BitField size="1" start="4" name="Loopback_Mode_Select" />
+      </Register>
+      <Register size="0x1" name="U1LSR" start="0xE0010014" >
+        <BitField size="1" start="0" name="RDR" />
+        <BitField size="1" start="1" name="OE" />
+        <BitField size="1" start="2" name="PE" />
+        <BitField size="1" start="3" name="FE" />
+        <BitField size="1" start="4" name="BI" />
+        <BitField size="1" start="5" name="THRE" />
+        <BitField size="1" start="6" name="TEMT" />
+        <BitField size="1" start="7" name="RXFE" />
+      </Register>
+      <Register size="0x1" name="U1MSR" start="0xE0010018" >
+        <BitField size="1" start="0" name="Delta_CTS" />
+        <BitField size="1" start="1" name="Delta_DSR" />
+        <BitField size="1" start="2" name="Trailing_Edge_RI" />
+        <BitField size="1" start="3" name="Delta_DCD" />
+        <BitField size="1" start="4" name="CTS" />
+        <BitField size="1" start="5" name="DSR" />
+        <BitField size="1" start="6" name="RI" />
+        <BitField size="1" start="7" name="DCD" />
+      </Register>
+      <Register size="0x1" name="U1SCR" start="0xE001001C" />
+    </RegisterGroup>
+    <RegisterGroup name="Pulse Width Modulator Registers" start="0xE0014000" >
+      <Register size="0x4" name="PWMIR" start="0xE0014000" >
+        <BitField size="1" start="0" name="PWMMR0_Interrupt" />
+        <BitField size="1" start="1" name="PWMMR1_Interrupt" />
+        <BitField size="1" start="2" name="PWMMR2_Interrupt" />
+        <BitField size="1" start="3" name="PWMMR3_Interrupt" />
+        <BitField size="1" start="4" name="PWMMR4_Interrupt" />
+        <BitField size="1" start="5" name="PWMMR5_Interrupt" />
+        <BitField size="1" start="6" name="PWMMR6_Interrupt" />
+      </Register>
+      <Register size="0x4" name="PWMTCR" start="0xE0014004" >
+        <BitField size="1" start="0" name="Counter_Enable" />
+        <BitField size="1" start="1" name="Counter_Reset" />
+        <BitField size="1" start="3" name="PWM_Enable" />
+      </Register>
+      <Register size="0x4" name="PWMTC" start="0xE0014008" />
+      <Register size="0x4" name="PWMPR" start="0xE001400C" />
+      <Register size="0x4" name="PWMPC" start="0xE0014010" />
+      <Register size="0x4" name="PWMMCR" start="0xE0014014" >
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR0" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR0" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR0" />
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR1" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR1" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR1" />
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR2" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR2" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR2" />
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR3" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR3" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR3" />
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR4" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR4" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR4" />
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR5" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR5" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR5" />
+        <BitField size="1" start="0" name="Interrupt_on_PWMMR6" />
+        <BitField size="1" start="0" name="Reset_on_PWMMR6" />
+        <BitField size="1" start="0" name="Stop_on_PWMMR6" />
+      </Register>
+      <Register size="0x4" name="PWMMR0" start="0xE0014018" />
+      <Register size="0x4" name="PWMMR1" start="0xE001401C" />
+      <Register size="0x4" name="PWMMR2" start="0xE0014020" />
+      <Register size="0x4" name="PWMMR3" start="0xE0014024" />
+      <Register size="0x4" name="PWMMR4" start="0xE0014040" />
+      <Register size="0x4" name="PWMMR5" start="0xE0014044" />
+      <Register size="0x4" name="PWMMR6" start="0xE0014048" />
+      <Register size="0x4" name="PWMPCR" start="0xE001404C" >
+        <BitField size="1" start="2" name="PWMSEL2" />
+        <BitField size="1" start="3" name="PWMSEL3" />
+        <BitField size="1" start="4" name="PWMSEL4" />
+        <BitField size="1" start="5" name="PWMSEL5" />
+        <BitField size="1" start="6" name="PWMSEL6" />
+        <BitField size="1" start="9" name="PWMENA1" />
+        <BitField size="1" start="10" name="PWMENA2" />
+        <BitField size="1" start="11" name="PWMENA3" />
+        <BitField size="1" start="12" name="PWMENA4" />
+        <BitField size="1" start="13" name="PWMENA5" />
+        <BitField size="1" start="14" name="PWMENA6" />
+      </Register>
+      <Register size="0x4" name="PWMLER" start="0xE0014050" >
+        <BitField size="1" start="0" name="Enable_PWM_Match_0_Latch" />
+        <BitField size="1" start="1" name="Enable_PWM_Match_1_Latch" />
+        <BitField size="1" start="2" name="Enable_PWM_Match_2_Latch" />
+        <BitField size="1" start="3" name="Enable_PWM_Match_3_Latch" />
+        <BitField size="1" start="4" name="Enable_PWM_Match_4_Latch" />
+        <BitField size="1" start="5" name="Enable_PWM_Match_5_Latch" />
+        <BitField size="1" start="6" name="Enable_PWM_Match_6_Latch" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="I2C0 Registers" start="0xE001C000" >
+      <Register size="0x1" name="I2C0CONSET" start="0xE001C000" >
+        <BitField size="1" start="2" name="AA" />
+        <BitField size="1" start="3" name="SI" />
+        <BitField size="1" start="4" name="STO" />
+        <BitField size="1" start="5" name="STA" />
+        <BitField size="1" start="6" name="I2EN" />
+      </Register>
+      <Register size="0x1" name="I2C0STAT" start="0xE001C004" />
+      <Register size="0x1" name="I2C0DAT" start="0xE001C008" />
+      <Register size="0x1" name="I2C0ADR" start="0xE001C00C" >
+        <BitField size="1" start="0" name="GC" />
+        <BitField size="6" start="1" name="Address" />
+      </Register>
+      <Register size="0x2" name="I2C0SCLH" start="0xE001C010" />
+      <Register size="0x2" name="I2C0SCLL" start="0xE001C014" />
+      <Register size="0x1" name="I2C0CONCLR" start="0xE001C018" >
+        <BitField size="1" start="2" name="AAC" />
+        <BitField size="1" start="3" name="SIC" />
+        <BitField size="1" start="5" name="STAC" />
+        <BitField size="1" start="6" name="I2ENC" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="I2C1 Registers" start="0xE005C000" >
+      <Register size="0x1" name="I2C1CONSET" start="0xE005C000" >
+        <BitField size="1" start="2" name="AA" />
+        <BitField size="1" start="3" name="SI" />
+        <BitField size="1" start="4" name="STO" />
+        <BitField size="1" start="5" name="STA" />
+        <BitField size="1" start="6" name="I2EN" />
+      </Register>
+      <Register size="0x1" name="I2C1STAT" start="0xE005C004" />
+      <Register size="0x1" name="I2C1DAT" start="0xE005C008" />
+      <Register size="0x1" name="I2C1ADR" start="0xE005C00C" >
+        <BitField size="1" start="0" name="GC" />
+        <BitField size="6" start="1" name="Address" />
+      </Register>
+      <Register size="0x2" name="I2C1SCLH" start="0xE005C010" />
+      <Register size="0x2" name="I2C1SCLL" start="0xE005C014" />
+      <Register size="0x1" name="I2C1CONCLR" start="0xE005C018" >
+        <BitField size="1" start="2" name="AAC" />
+        <BitField size="1" start="3" name="SIC" />
+        <BitField size="1" start="5" name="STAC" />
+        <BitField size="1" start="6" name="I2ENC" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="SPI Registers" start="0xE0020000" >
+      <Register size="0x1" name="SPCR" start="0xE0020000" >
+        <BitField size="1" start="3" name="CPHA" />
+        <BitField size="1" start="4" name="CPOL" />
+        <BitField size="1" start="5" name="MSTR" />
+        <BitField size="1" start="6" name="LSBF" />
+        <BitField size="1" start="7" name="SPIE" />
+      </Register>
+      <Register size="0x1" name="SPSR" start="0xE0020004" >
+        <BitField size="1" start="3" name="ABRT" />
+        <BitField size="1" start="4" name="MODF" />
+        <BitField size="1" start="5" name="ROVR" />
+        <BitField size="1" start="6" name="WCOL" />
+        <BitField size="1" start="7" name="SPIF" />
+      </Register>
+      <Register size="0x1" name="SPDR" start="0xE0020008" />
+      <Register size="0x1" name="SPCCR" start="0xE002000C" />
+      <Register size="0x1" name="SPINT" start="0xE002001C" />
+    </RegisterGroup>
+    <RegisterGroup name="Real Time Clock Registers" start="0xE0024000" >
+      <Register size="0x4" name="ILR" start="0xE0024000" >
+        <BitField size="1" start="0" name="RTCCIF" />
+        <BitField size="1" start="1" name="RTCALF" />
+      </Register>
+      <Register size="0x4" name="CTC" start="0xE0024004" >
+        <BitField size="15" start="1" name="Clock_Tick_Counter" />
+      </Register>
+      <Register size="0x4" name="CCR" start="0xE0024008" >
+        <BitField size="1" start="0" name="CLKEN" />
+        <BitField size="1" start="1" name="CTCRST" />
+        <BitField size="2" start="2" name="CTTEST" />
+      </Register>
+      <Register size="0x4" name="CIIR" start="0xE002400C" />
+      <Register size="0x4" name="AMR" start="0xE0024010" >
+        <BitField size="1" start="0" name="AMRSEC" />
+        <BitField size="1" start="1" name="AMRMIN" />
+        <BitField size="1" start="2" name="AMRHOUR" />
+        <BitField size="1" start="3" name="AMRDOM" />
+        <BitField size="1" start="4" name="AMRDOW" />
+        <BitField size="1" start="5" name="AMRDOY" />
+        <BitField size="1" start="6" name="AMRMON" />
+        <BitField size="1" start="7" name="AMRYEAR" />
+      </Register>
+      <Register size="0x4" name="CTIME0" start="0xE0024014" >
+        <BitField size="6" start="0" name="Seconds" />
+        <BitField size="6" start="8" name="Minutes" />
+        <BitField size="5" start="16" name="Hours" />
+        <BitField size="5" start="27" name="Day_of_Week" />
+      </Register>
+      <Register size="0x4" name="CTIME1" start="0xE0024018" >
+        <BitField size="5" start="0" name="Day_of_Month" />
+        <BitField size="4" start="8" name="Month" />
+        <BitField size="12" start="16" name="Year" />
+      </Register>
+      <Register size="0x4" name="CTIME2" start="0xE002401C" >
+        <BitField size="12" start="0" name="Day_of_Year" />
+      </Register>
+      <Register size="0x4" name="SEC" start="0xE0024020" />
+      <Register size="0x4" name="MIN" start="0xE0024024" />
+      <Register size="0x4" name="HOUR" start="0xE0024028" />
+      <Register size="0x4" name="DOM" start="0xE002402C" />
+      <Register size="0x4" name="DOW" start="0xE0024030" />
+      <Register size="0x4" name="DOY" start="0xE0024034" />
+      <Register size="0x4" name="MONTH" start="0xE0024038" />
+      <Register size="0x4" name="YEAR" start="0xE002403C" />
+      <Register size="0x4" name="ALSEC" start="0xE0024060" />
+      <Register size="0x4" name="ALMIN" start="0xE0024064" />
+      <Register size="0x4" name="ALHOUR" start="0xE0024068" />
+      <Register size="0x4" name="ALDOM" start="0xE002406C" />
+      <Register size="0x4" name="ALDOW" start="0xE0024070" />
+      <Register size="0x4" name="ALDOY" start="0xE0024074" />
+      <Register size="0x4" name="ALMON" start="0xE0024078" />
+      <Register size="0x4" name="ALYEAR" start="0xE002407C" />
+      <Register size="0x4" name="PREINT" start="0xE0024080" />
+      <Register size="0x4" name="PREFRAC" start="0xE0024084" />
+    </RegisterGroup>
+    <RegisterGroup name="GPIO Registers" start="0xE0028000" >
+      <Register size="0x4" name="IO0PIN" start="0xE0028000" />
+      <Register size="0x4" name="IO0SET" start="0xE0028004" />
+      <Register size="0x4" name="IO0DIR" start="0xE0028008" />
+      <Register size="0x4" name="IO0CLR" start="0xE002800C" />
+      <Register size="0x4" name="IO1PIN" start="0xE0028010" />
+      <Register size="0x4" name="IO1SET" start="0xE0028014" />
+      <Register size="0x4" name="IO1DIR" start="0xE0028018" />
+      <Register size="0x4" name="IO1CLR" start="0xE002801C" />
+    </RegisterGroup>
+    <RegisterGroup name="Pin Connect Block Registers" start="0xE002C000" >
+      <Register size="0x4" name="PINSEL0" start="0xE002C000" />
+      <Register size="0x4" name="PINSEL1" start="0xE002C004" />
+      <Register size="0x4" name="PINSEL2" start="0xE002C014" />
+    </RegisterGroup>
+    <RegisterGroup name="AD0" start="0xE0034000" >
+      <Register size="0x4" name="AD0CR" start="0xE0034000" >
+        <BitField size="8" start="0" name="SEL" />
+        <BitField size="8" start="8" name="CLKDIV" />
+        <BitField size="1" start="16" name="BURST" />
+        <BitField size="3" start="17" name="CLKS" />
+        <BitField size="1" start="21" name="PDN" />
+        <BitField size="2" start="22" name="TEST1_0" />
+        <BitField size="3" start="24" name="START" />
+        <BitField size="1" start="27" name="EDGE" />
+      </Register>
+      <Register size="0x4" name="AD0DR" start="0xE0034004" >
+        <BitField size="10" start="6" name="VddA" />
+        <BitField size="3" start="24" name="CHN" />
+        <BitField size="1" start="30" name="OVERUN" />
+        <BitField size="1" start="31" name="DONE" />
+      </Register>
+      <Register size="0x4" name="ADGSR" start="0xE0034008" >
+        <BitField size="1" start="16" name="BURST" />
+        <BitField size="3" start="24" name="START" />
+        <BitField size="1" start="27" name="EDGE" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="AD1" start="0xE0060000" >
+      <Register size="0x4" name="AD1CR" start="0xE0060000" >
+        <BitField size="8" start="0" name="SEL" />
+        <BitField size="8" start="8" name="CLKDIV" />
+        <BitField size="1" start="16" name="BURST" />
+        <BitField size="3" start="17" name="CLKS" />
+        <BitField size="1" start="21" name="PDN" />
+        <BitField size="2" start="22" name="TEST1_0" />
+        <BitField size="3" start="24" name="START" />
+        <BitField size="1" start="27" name="EDGE" />
+      </Register>
+      <Register size="0x4" name="AD1DR" start="0xE0060004" >
+        <BitField size="10" start="6" name="VddA" />
+        <BitField size="3" start="24" name="CHN" />
+        <BitField size="1" start="30" name="OVERUN" />
+        <BitField size="1" start="31" name="DONE" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="DA" start="0xE006C000" >
+      <Register size="0x4" name="DACR" start="0xE006C000" >
+        <BitField size="10" start="6" name="VALUE" />
+        <BitField size="1" start="16" name="BIAS" />
+      </Register>
+    </RegisterGroup>
+    <RegisterGroup name="SSP" start="0xE0068000" >
+      <Register size="0x4" name="SSPCR0" start="0xE0068000" >
+        <BitField size="8" start="8" name="SCR" />
+        <BitField size="1" start="7" name="SPH" />
+        <BitField size="1" start="6" name="SPO" />
+        <BitField size="2" start="4" name="FRF" />
+        <BitField size="4" start="0" name="DSS" />
+      </Register>
+      <Register size="0x4" name="SSPCR1" start="0xE0068004" >
+        <BitField size="1" start="3" name="SOD" />
+        <BitField size="1" start="2" name="MS" />
+        <BitField size="1" start="1" name="SSE" />
+        <BitField size="1" start="0" name="LBE" />
+      </Register>
+      <Register size="0x4" name="SSPDR" start="0xE0068008" />
+      <Register size="0x4" name="SSPSR" start="0xE006800C" >
+        <BitField size="1" start="4" name="BSY" />
+        <BitField size="1" start="3" name="RFF" />
+        <BitField size="1" start="2" name="RNE" />
+        <BitField size="1" start="1" name="TNF" />
+        <BitField size="1" start="0" name="TFE" />
+      </Register>
+      <Register size="0x4" name="SSPCPSR" start="0xE0068010" />
+      <Register size="0x4" name="SSPIMSC" start="0xE0068014" >
+        <BitField size="1" start="3" name="TXIM" />
+        <BitField size="1" start="2" name="RXIM" />
+        <BitField size="1" start="1" name="RTIM" />
+        <BitField size="1" start="0" name="RORIM" />
+      </Register>
+      <Register size="0x4" name="SSPRIS" start="0xE0068018" >
+        <BitField size="1" start="3" name="TXRIS" />
+        <BitField size="1" start="2" name="RXRIS" />
+        <BitField size="1" start="1" name="RTRIS" />
+        <BitField size="1" start="0" name="RORRIS" />
+      </Register>
+      <Register size="0x4" name="SSPMIS" start="0xE006801C" >
+        <BitField size="1" start="3" name="TXMIS" />
+        <BitField size="1" start="2" name="RXMIS" />
+        <BitField size="1" start="1" name="RTMIS" />
+        <BitField size="1" start="0" name="RORMIS" />
+      </Register>
+      <Register size="0x4" name="SSPICR" start="0xE0068020" >
+        <BitField size="1" start="1" name="RTIC" />
+        <BitField size="1" start="0" name="RORIC" />
+      </Register>
+      <Register size="0x4" name="SSPPeriphID0_3" start="0xE0068FE0" />
+      <Register size="0x4" name="SSPPCellID0_3" start="0xE0068FFC" />
+    </RegisterGroup>
+    <RegisterGroup name="System Control Block" start="0xE01FC000" >
+      <Register size="0x1" name="MAMCR" start="0xE01FC000" >
+        <BitField size="2" start="0" name="MAM_mode_control" />
+      </Register>
+      <Register size="0x1" name="MAMTIM" start="0xE01FC004" >
+        <BitField size="3" start="0" name="MAM_Fetch_Cycle_timing" />
+      </Register>
+      <Register size="0x1" name="MEMMAP" start="0xE01FC040" >
+        <BitField size="2" start="0" name="MAP1_0" />
+      </Register>
+      <Register size="0x1" name="PLLCON" start="0xE01FC080" >
+        <BitField size="1" start="0" name="PLLE" />
+        <BitField size="1" start="1" name="PLLC" />
+      </Register>
+      <Register size="0x1" name="PLLCFG" start="0xE01FC084" >
+        <BitField size="4" start="0" name="MSEL4_0" />
+        <BitField size="2" start="5" name="PSEL1_0" />
+      </Register>
+      <Register size="0x2" name="PLLSTAT" start="0xE01FC088" >
+        <BitField size="4" start="0" name="MSEL4_0" />
+        <BitField size="2" start="5" name="PSEL1_0" />
+        <BitField size="1" start="8" name="PLLE" />
+        <BitField size="1" start="9" name="PLLC" />
+        <BitField size="1" start="10" name="PLOCK" />
+      </Register>
+      <Register size="0x1" name="PLLFEED" start="0xE01FC08C" />
+      <Register size="0x1" name="PCON" start="0xE01FC0C0" >
+        <BitField size="1" start="0" name="IDL" />
+        <BitField size="1" start="1" name="PD" />
+      </Register>
+      <Register size="0x4" name="PCONP" start="0xE01FC0C4" >
+        <BitField size="1" start="1" name="PCTIM0" />
+        <BitField size="1" start="2" name="PCTIM1" />
+        <BitField size="1" start="3" name="PCURT0" />
+        <BitField size="1" start="4" name="PCURT1" />
+        <BitField size="1" start="5" name="PCPWM0" />
+        <BitField size="1" start="7" name="PCI2C" />
+        <BitField size="1" start="8" name="PCSPIO" />
+        <BitField size="1" start="9" name="PCRTC" />
+        <BitField size="1" start="10" name="PCSPI1" />
+        <BitField size="1" start="12" name="PCAD" />
+      </Register>
+      <Register size="0x1" name="VPBDIV" start="0xE01FC100" >
+        <BitField size="2" start="0" name="VPBDIV" />
+        <BitField size="2" start="4" name="XCLKDIV" />
+      </Register>
+      <Register size="0x1" name="RSID" start="0xE01FC180" />
+      <Register size="0x1" name="CSPR" start="0xE01FC180" />
+      <Register size="0x1" name="EXTINT" start="0xE01FC140" >
+        <BitField size="1" start="0" name="EINT0" />
+        <BitField size="1" start="1" name="EINT1" />
+        <BitField size="1" start="2" name="EINT2" />
+        <BitField size="1" start="3" name="EINT3" />
+      </Register>
+      <Register size="0x1" name="INTWAKE" start="0xE01FC144" />
+      <Register size="0x1" name="EXTMODE" start="0xE01FC148" />
+      <Register size="0x1" name="EXTPOLAR" start="0xE01FC14C" />
+    </RegisterGroup>
+    <RegisterGroup name="Vectored Interrupt Controller Registers" start="0xFFFFF000" >
+      <Register size="0x4" name="VICIRQStatus" start="0xFFFFF000" />
+      <Register size="0x4" name="VICFIQStatus" start="0xFFFFF004" />
+      <Register size="0x4" name="VICRawIntr" start="0xFFFFF008" />
+      <Register size="0x4" name="VICIntSelect" start="0xFFFFF00C" />
+      <Register size="0x4" name="VICIntEnable" start="0xFFFFF010" />
+      <Register size="0x4" name="VICIntEnClr" start="0xFFFFF014" />
+      <Register size="0x4" name="VICSoftInt" start="0xFFFFF018" />
+      <Register size="0x4" name="VICSoftIntClear" start="0xFFFFF01C" />
+      <Register size="0x4" name="VICProtection" start="0xFFFFF020" />
+      <Register size="0x4" name="VICVectAddr" start="0xFFFFF030" />
+      <Register size="0x4" name="VICDefVectAddr" start="0xFFFFF034" />
+      <Register size="0x4" name="VICVectAddr0" start="0xFFFFF100" />
+      <Register size="0x4" name="VICVectAddr1" start="0xFFFFF104" />
+      <Register size="0x4" name="VICVectAddr2" start="0xFFFFF108" />
+      <Register size="0x4" name="VICVectAddr3" start="0xFFFFF10C" />
+      <Register size="0x4" name="VICVectAddr4" start="0xFFFFF110" />
+      <Register size="0x4" name="VICVectAddr5" start="0xFFFFF114" />
+      <Register size="0x4" name="VICVectAddr6" start="0xFFFFF118" />
+      <Register size="0x4" name="VICVectAddr7" start="0xFFFFF11C" />
+      <Register size="0x4" name="VICVectAddr8" start="0xFFFFF120" />
+      <Register size="0x4" name="VICVectAddr9" start="0xFFFFF124" />
+      <Register size="0x4" name="VICVectAddr10" start="0xFFFFF128" />
+      <Register size="0x4" name="VICVectAddr11" start="0xFFFFF12C" />
+      <Register size="0x4" name="VICVectAddr12" start="0xFFFFF130" />
+      <Register size="0x4" name="VICVectAddr13" start="0xFFFFF134" />
+      <Register size="0x4" name="VICVectAddr14" start="0xFFFFF138" />
+      <Register size="0x4" name="VICVectAddr15" start="0xFFFFF13C" />
+      <Register size="0x4" name="VICVectCntl0" start="0xFFFFF200" />
+      <Register size="0x4" name="VICVectCntl1" start="0xFFFFF204" />
+      <Register size="0x4" name="VICVectCntl2" start="0xFFFFF208" />
+      <Register size="0x4" name="VICVectCntl3" start="0xFFFFF20C" />
+      <Register size="0x4" name="VICVectCntl4" start="0xFFFFF210" />
+      <Register size="0x4" name="VICVectCntl5" start="0xFFFFF214" />
+      <Register size="0x4" name="VICVectCntl6" start="0xFFFFF218" />
+      <Register size="0x4" name="VICVectCntl7" start="0xFFFFF21C" />
+      <Register size="0x4" name="VICVectCntl8" start="0xFFFFF220" />
+      <Register size="0x4" name="VICVectCntl9" start="0xFFFFF224" />
+      <Register size="0x4" name="VICVectCntl10" start="0xFFFFF228" />
+      <Register size="0x4" name="VICVectCntl11" start="0xFFFFF22C" />
+      <Register size="0x4" name="VICVectCntl12" start="0xFFFFF230" />
+      <Register size="0x4" name="VICVectCntl13" start="0xFFFFF234" />
+      <Register size="0x4" name="VICVectCntl14" start="0xFFFFF238" />
+      <Register size="0x4" name="VICVectCntl15" start="0xFFFFF23C" />
+    </RegisterGroup>
+  </MemorySegment>
+</Root>
