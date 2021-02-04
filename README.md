@@ -297,7 +297,7 @@ the data stage with the requested descriptor data. If the request is for a confi
 
 <tr>
 
-<td bgcolor="#F0F0F0" width="108">_Host computer:_</td>
+<td bgcolor="#F0F0F0" width="108">Host computer:</td>
 
 <td>Pentium(R) 4 CPU 1.60 GHz, 256Mb RAM Intel(r), 82801 BA/BAM USB Universal Host Controller, Windows XP Pro SP2</td>
 
@@ -305,7 +305,7 @@ the data stage with the requested descriptor data. If the request is for a confi
 
 <tr>
 
-<td bgcolor="#F0F0F0" valign="top" width="108">_Host USB driver:_</td>
+<td bgcolor="#F0F0F0" valign="top" width="108">Host USB driver:</td>
 
 <td>Thesycon(r) USBIO.SYS v.2.31 Demo version</td>
 
@@ -313,7 +313,7 @@ the data stage with the requested descriptor data. If the request is for a confi
 
 <tr>
 
-<td bgcolor="#F0F0F0" width="108">_Host application:_</td>
+<td bgcolor="#F0F0F0" width="108">Host application:</td>
 
 <td>USBIOAPP.EXE by Thesycon(r); Buffers size - 4096 Number of buffers - 4</td>
 
@@ -321,7 +321,7 @@ the data stage with the requested descriptor data. If the request is for a confi
 
 <tr>
 
-<td bgcolor="#F0F0F0" width="108">_Device:_</td>
+<td bgcolor="#F0F0F0" width="108">Device:</td>
 
 <td>Philips LPC 2146 (Fcore = 60MHz, Fusb = 48MHz)</td>
 
@@ -339,7 +339,7 @@ the data stage with the requested descriptor data. If the request is for a confi
 
 <tr>
 
-<td bgcolor="#F0F0F0" colspan="2" align="center">Speed for both direction (PC to device, device to PC) - _KBytes/sec_</td>
+<td bgcolor="#F0F0F0" colspan="2" align="center">Speed for both direction (PC to device, device to PC) - KBytes/sec</td>
 
 </tr>
 
@@ -373,7 +373,7 @@ the data stage with the requested descriptor data. If the request is for a confi
 
 <tr>
 
-<td bgcolor="#F0F0F0" colspan="5" class="style4" align="center">TNkernel USB bulk firmware examples - data transfer speed (_in KBytes/sec_)</td>
+<td bgcolor="#F0F0F0" colspan="5" class="style4" align="center">TNkernel USB bulk firmware examples - data transfer speed (in KBytes/sec)</td>
 
 </tr>
 
